@@ -15,9 +15,8 @@ FORMULA_TYPES=( "osx" "linux64")
 
 # download the source code and unpack it into LIB_NAME
 function download() {
-    git clone --depth=1 ${GIT_URL} eos/
+    git clone ${GIT_URL} eos/
     cd eos/
-    git fetch
     git checkout ${GIT_TAG}
 }
 
